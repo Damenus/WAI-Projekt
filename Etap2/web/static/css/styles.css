@@ -1,0 +1,144 @@
+body {
+ background-image: url(http://192.168.56.10/static/img/pattern.png);
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+
+#content {
+background: white;
+width: auto;
+padding: 15px;
+}
+
+#warning {
+ background: white;
+ margin:0 auto;
+ padding: 5px;
+ width:840px; 
+ z-index: 5;
+}
+
+#wrapper {
+background-image: url(obrazy/pattern.png);
+ margin:0 auto;
+ width:850px; 
+ z-index: 5;
+}
+
+#blok {
+width: auto;
+height: 300px;
+background: blue;
+z-index: 10;
+	
+}
+
+#nav {
+	
+	
+}
+
+#login {
+background: white;
+height: 60px;
+}
+
+
+#menu {display: table; padding: 0 10px 0 !important; margin: 0 auto; overflow: hidden; font-size: 14px; background:none;} 
+#menu li {list-style-type: none; margin: 0 auto; float: left; } 
+#menu li:hover {background: #404040;} 
+#menu li a {display: block; color: silver; text-decoration: none; padding: 7px 10px 7px;} 
+#menu li a:hover {background: #404040; color: white;} 
+#menu li li a {width: 160px;} 
+#menu li ul {overflow: hidden; display: none; background: #242424;} 
+#menu li:hover ul {position: absolute; padding: 0; display: block; width: 160px;} 
+
+*:hover {-moz-transition: 0.3s ease-in; -webkit-transition: 0.3s ease-in; -o-transition: 0.3s ease-in; transition: 0.3s ease-in;} 
+
+#menu {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;} 
+#menu li ul {-moz-border-radius: 0 0 3px 3px; -webkit-border-radius: 0 0 3px 3px; -o-border-radius: 0 0 3px 3px; border-radius: 0 0 3px 3px;}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #778899;
+    width: 800px;
+    margin: 10px 0px;
+}
+
+table td, table th {
+    padding: 5px;
+}
+
+table tbody td, table th {
+    border: 1px solid #778899;
+}
+
+table tbody td[colspan] {
+    text-align: center;
+}
+
+table tfoot td:last-child {
+    text-align: right;
+}
+
+form label {
+    display: block;
+    margin: 10px 10px 10px 0px;
+    width: 800px;
+}
+
+textarea {
+    display: block;
+    margin: 10px 10px 10px 0px;
+    padding: 2px;
+    border-width: 1px;
+    width: 794px;
+    height: 90px;
+}
+
+form label input {
+    width: 600px;
+    float: right;
+}
+
+form input[type=submit] {
+    display: block;
+    width: 80px;
+    margin: 10px 0px 10px 720px;
+}
+
+form.inline, form.inline input {
+    margin: 0px;
+    width: auto;
+    display: inline;
+}
+
+a.cancel {
+    float: left;
+}
+
+p.description {
+    width: 800px;
+    text-align: justify;
+}
+
+footer {
+    border-top: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    bottom: 0px;
+    width: 780px;
+}
+
+#cart_container {
+    position: relative;
+    width: 800px;
+}
+
+
+
+#cart_container {
+    position: relative;
+    width: 800px;
+}

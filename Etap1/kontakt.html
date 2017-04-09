@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Statki</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+ <meta name="description" content="Strona o statkach na projekt z HiHu" />
+ <meta name="keywords" content="żaglowce, okręty, statki" />
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ 
+  <script>
+  $(function() {
+    var tooltips = $( "[title]" ).tooltip({
+      position: {
+        my: "left top",
+        at: "right+5 top-5"
+      }
+    });
+    $( "<button>" )
+      .text( "Pomoc" )
+      .button()
+      .click(function() {
+        tooltips.tooltip( "open" );
+      })
+      .insertAfter( "form" );
+  });
+  
+  $(function() {
+    var select = $( "#ocena" );
+    var slider = $( "<div id='slider'></div>" ).insertAfter( select ).slider({
+      min: 1,
+      max: 6,
+      range: "min",
+      value: select[ 0 ].selectedIndex + 1,
+      slide: function( event, ui ) {
+        select[ 0 ].selectedIndex = ui.value - 1;
+      }
+    });
+    $( "#ocena" ).change(function() {
+      slider.slider( "value", this.selectedIndex + 1 );
+    });
+  });
+  </script>
+ 
+ 
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="header">
+Żaglowce i okręty.	
+<a name="gora"></a>
+</div>
+
+<div id="nav">
+	<ul id="menu"> 
+		<li><a href="index.html">Start</a> </li> 
+		<li><a href="galeria.html" title="">Informacje</a> 
+			<ul> 
+				<li><a href="zaglowce.html" title="">Żaglowce</a></li> 
+				<li><a href="okrety.html" title="">Okręty</a></li> 
+			</ul> 
+		</li> 
+		<li><a href="kontakt.html" title="">Ankieta</a></li> 
+	</ul> 
+</div>
+
+
+<div id="content">
+	<br />
+                <p>Ankieta w kwesti rozwoju strony</p>
+                <br />
+                <form method="get">
+                <label>Imie: </label><input name="imie" title="Proszę o podanie imienia."></input>
+                <label>Nazwisko: </label><input name="nazwisko" title="Proszę o podanie nazwiska."></input>
+                <br /><br />
+				Płeć
+				<input type="radio" name="Płeć" value="Kobieta" ></input>Kobieta
+				<input type="radio" name="Płeć" value="Mężczyzna" ></input>Mężczyzna
+				<br><br>
+				Data urodzenia
+				<input type="date" name="dataurodzenia" /> 
+				<br />
+				<p>Jaki Twoim zdaniem temat strony powinien zostać poszerzony?(możesz wybrać więcej niż 1)</p>
+				<input type="checkbox" name="statki" value="Żaglowce" ></input>Żaglowce<br>
+				<input type="checkbox" name="statki" value="Okręty" ></input>Okręty<br>
+				<input type="checkbox" name="statki" value="Inny" ></input>Inny (podaj jaki)
+				<input type="text" name="Inny" ></input>
+				<br />
+				<p>Jak dowiedziałeś się o stronie?</p>
+				<select name="wiedza" multiple="multiple" size="3">
+					<option>Z uczelni</option>
+					<option>Z bloga</option>
+					<option>Od znajomego</option>
+					<option>Przez Google</option>
+					<option>Inne</option>
+				</select>
+				<br /><br />
+				<form id="reservation">
+				<label for="ocena">Twoja ocena strony</label>
+				<select name="ocena" id="ocena">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+				</form>
+				<br /><br />
+				Uwagi
+				<br /><br />
+                <textarea name="message" style="width: 365px; height: 132px">Dodatkowe uwagi. Wpisz tekst wiadomości</textarea>
+				<br /><br />
+                <input type="submit" value="Wyślij"></input>
+				<input type="reset" value="Wyczyść dane" ></input>
+                </form>
+                <br />
+                <p>W razie dalszych pytań wyślij maila na adres:</p>
+                <a href="mailto:damdarcz@student.pg.gda.pl?subject=Projekt HiH">damdarcz@student.pg.gda.pl</a>
+				<br />
+				
+				<a href="#gora">Wróć do góry</a>
+</div>
+
+<div id="footer">
+Strona przygotowana przez Damian Darczuk 2014
+</div>
+
+</div>
+ </body>
+</html>

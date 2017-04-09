@@ -1,0 +1,84 @@
+#kontener {width: auto; margin: 0 auto;} 
+#menu {display: table; padding: 0 10px 0 !important; margin: 0 auto; overflow: hidden; font-size: 14px; background:none;} 
+#menu li {list-style-type: none; margin: 0 auto; float: left; } 
+#menu li:hover {background: #404040;} 
+#menu li a {display: block; color: silver; text-decoration: none; padding: 7px 10px 7px;} 
+#menu li a:hover {background: #404040; color: white;} 
+#menu li li a {width: 160px;} 
+#menu li ul {overflow: hidden; display: none; background: #242424;} 
+#menu li:hover ul {position: absolute; padding: 0; display: block; width: 160px;} 
+
+*:hover {-moz-transition: 0.3s ease-in; -webkit-transition: 0.3s ease-in; -o-transition: 0.3s ease-in; transition: 0.3s ease-in;} 
+
+#menu {-moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;} 
+#menu li ul {-moz-border-radius: 0 0 3px 3px; -webkit-border-radius: 0 0 3px 3px; -o-border-radius: 0 0 3px 3px; border-radius: 0 0 3px 3px;}
+
+h1
+{
+font-family: bookman old style ,cursive;
+font-size: x-large;
+font-style: italic;
+color: red;
+}
+
+h2
+{
+font-family: bookman old style, cursive;
+font-size: x-large;
+font-style: italic;
+}
+
+h3
+{
+font-family: bookman old style, cursive;
+font-size: large;
+font-style: italic;
+}
+
+h4
+{
+font-family: bookman old style ,cursive;
+font-size: normal;
+font-style: italic;
+color: white;
+}
+
+
+
+body {
+
+ background-image: url(obrazy/pattern.png);
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+
+
+#wrapper {
+background-image: url(obrazy/pattern.png);
+ margin:0 auto;
+ width:960px; 
+}
+
+#header {
+}
+
+#nav {
+}
+
+#content {
+background-image: url(obrazy/pattern.png);
+}
+
+.post {
+}
+
+.postmeta {
+}
+
+#footer {
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;border:none;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+.tg .tg-s6z2{text-align:center}
